@@ -1,0 +1,11 @@
+{
+	"initial": [
+		"libs/egret.min.js",
+		"libs/egret.web.min.js",
+		"libs/game.min.js",
+		"libs/assetsmanager.min.js"
+	],
+	"game": [
+		"js/main.js"
+	]
+}

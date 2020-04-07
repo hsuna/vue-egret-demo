@@ -1,0 +1,47 @@
+{
+  "name": "vue-egret-demo",
+  "version": "1.0.0",
+  "description": "A VueEgret.js project",
+  "author": "Hsuna",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --inline --progress --config build/webpackDevServer.config.js",
+    "build": "node build/build.js"
+  },
+  "dependencies": {
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-transform-regenerator": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "core-js": "^2.6.5",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "node-notifier": "^5.4.3",
+    "ora": "^3.4.0",
+    "rimraf": "^3.0.0",
+    "ts-loader": "^6.1.1",
+    "typescript": "^3.6.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-egret": "vue-egret",
+    "vue-egret-loader": "vue-egret-loader",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
