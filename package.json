@@ -24,7 +24,7 @@
     "copy-webpack-plugin": "^5.0.4",
     "core-js": "^2.6.5",
     "friendly-errors-webpack-plugin": "^1.7.0",
-    "node-notifier": "^5.4.3",
+    "node-notifier": "^8.0.1",
     "ora": "^3.4.0",
     "rimraf": "^3.0.0",
     "ts-loader": "^6.1.1",
