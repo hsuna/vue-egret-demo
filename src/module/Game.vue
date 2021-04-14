@@ -1,6 +1,6 @@
 <template>
-    <Sprite touchEnabled="true" @enterFrame="onEnterFrame" @touchTap="onTouchTop">
-        <Image x=0 y=0 width=420 height=500 skin="img_bg_02_jpg" />
+    <Sprite touchEnabled="true" @enterFrame="onEnterFrame" @touchTap="onTouchTap">
+        <Image x="0" y="0" width="420" height="500" skin="img_bg_02_jpg" />
         <MapView ref="mapView" :play="play" :speed="MOVE_SPEED"/>
         <PlayerItem ref="playerItem" :play="play" :status="status" :x="playerX" :y="playerY" :rotation="playerAngle" />
         <Label v-if="play" x=20 y=20 width=400 height=30 size=20>当前分数为：{{score}}</Label>
@@ -65,9 +65,12 @@ export default {
             {
                 this.status = PlayerItem.RUN;
             }
-            this.checkHit();
+
+            this.$nextTick(() => {
+                this.checkHit();
+            })
         },
-        onTouchTop(){
+        onTouchTap(){
             if(this.play){
                 if(PlayerItem.RUN === this.status) {
                     this.status = PlayerItem.JUMP;

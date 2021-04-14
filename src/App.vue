@@ -69,11 +69,11 @@ export default {
         createGameScene() {
             this.scenes = 'start';
         },
-        changeScene(evt){
-            this.scenes = evt.data
+        changeScene(state){
+            this.scenes = state
         },
-        changeScore(evt){
-            this.score = evt.data
+        changeScore(value){
+            this.score = value
         }
     },
 }

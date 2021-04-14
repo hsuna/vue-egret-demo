@@ -1,10 +1,10 @@
 <template>
     <Sprite @enterFrame="onEnterFrame">
         <Sprite :x="mapAX">
-            <MapItem :ref="`itemA_${index}`" v-for="(item, index) in mapAInfo" :key="index" :x="item.x" :y="item.y" :width="Math.ceil(item.w)" :height="Math.ceil(item.h)" :rotation="item.r" />
+            <MapItem ref="item" v-for="(item, index) in mapAInfo" :key="index" :x="item.x" :y="item.y" :width="Math.ceil(item.w)" :height="Math.ceil(item.h)" :rotation="item.r" />
         </Sprite>
         <Sprite :x="mapBX">
-            <MapItem :ref="`itemB_${index}`" v-for="(item, index) in mapBInfo" :key="index" :x="item.x" :y="item.y" :width="Math.ceil(item.w)" :height="Math.ceil(item.h)" :rotation="item.r" />
+            <MapItem ref="item" v-for="(item, index) in mapBInfo" :key="index" :x="item.x" :y="item.y" :width="Math.ceil(item.w)" :height="Math.ceil(item.h)" :rotation="item.r" />
         </Sprite>
     </Sprite>
 </template>
@@ -78,7 +78,7 @@ export default {
             return mapWidth;
         },
         getMapItems(){
-            return Object.values(this.$refs)
+            return this.$refs['item'];
         }
     }
 }

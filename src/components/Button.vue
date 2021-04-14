@@ -1,5 +1,5 @@
 <template>
-    <Sprite touchEnabled="true" @touchBegin="onTouchBegin" @touchEnd="onTouchEnd" @touchCancel="onTouchEnd">
+    <Sprite touchEnabled="true" @touchBegin="onTouchBegin" @touchEnd="onTouchEnd" @touchCancel="onTouchEnd" @touchTap="$emit('touchTap',$event)">
         <Image :skin="skin" :width="width" :height="bitmaps[status].height || height" bitmapX="0" :bitmapY="bitmaps[status].y||0" :filters="bitmaps[status].filters||[]">
     </Sprite>
 </template>

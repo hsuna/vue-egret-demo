@@ -10,8 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "vue-egret": "1.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -31,8 +30,9 @@
     "ts-loader": "^6.1.1",
     "typescript": "^3.6.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "vue-egret": "vue-egret",
-    "vue-egret-loader": "vue-egret-loader",
+    "vue-egret-loader": "1.4.2",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1"
   },
   "engines": {

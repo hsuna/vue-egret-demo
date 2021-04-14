@@ -63,7 +63,6 @@ module.exports = function(webpackEnv) {
     resolve: {
       extensions: ['.ts', '.js', '.vue', '.json'],
       alias: {
-        'vue-egret': 'vue-egret/dist/vue.egret.runtime.js',
         '@': resolve('src')
       }
     },
